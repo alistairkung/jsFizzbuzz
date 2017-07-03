@@ -1,6 +1,12 @@
-function FizzBuzz() {}
+function FizzBuzz () {
+}
+
 FizzBuzz.prototype.play = function(number) {
-	if (this._isDivisibleBy(3, number)) {
-		return "Fizz";
-	} 
+	if (number % 15 == 0) {
+		return 'FizzBuzz'
+	} else if (number % 5 == 0) {
+		return 'Buzz'
+	}	else if (number % 3 == 0) {
+		return 'Fizz'
+	}
 }
